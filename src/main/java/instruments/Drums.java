@@ -15,5 +15,9 @@ public class Drums extends MusicInstrument {
         return noOfCymbals;
     }
 
+    public String play(String sound){
+        return "The drums make a sound: " + sound;
+    }
+
 
 }

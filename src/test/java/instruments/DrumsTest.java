@@ -39,4 +39,9 @@ public class DrumsTest {
     public void canGetNoOfCymbals(){
         assertEquals(2, drums.getNoOfCymbals());
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("The drums make a sound: badum tish", drums.play("badum tish"));
+    }
 }
