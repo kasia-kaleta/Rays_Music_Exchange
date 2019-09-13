@@ -12,4 +12,8 @@ public class Piano extends MusicInstrument{
     public String getKeyboardType() {
         return keyboardType;
     }
+
+    public String play(String sound){
+        return "The piano makes a sound: " + sound;
+    }
 }

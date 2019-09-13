@@ -39,4 +39,9 @@ public class PianoTest {
     public void canGetKeyboardType(){
         assertEquals("Tri-Sensor Scaled Hammer Action II", piano.getKeyboardType());
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("The piano makes a sound: dun dun duuuun", piano.play("dun dun duuuun"));
+    }
 }
