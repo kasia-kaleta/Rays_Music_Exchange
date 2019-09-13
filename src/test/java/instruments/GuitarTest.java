@@ -45,4 +45,9 @@ public class GuitarTest {
         assertEquals("The guitar makes a sound: strum", guitar.play("strum"));
     }
 
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(26.00, guitar.calculateMarkup(), 0.01);
+    }
+
 }

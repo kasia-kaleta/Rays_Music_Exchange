@@ -1,8 +1,9 @@
 package instruments;
 
 import behaviours.IPlay;
+import behaviours.ISell;
 
-public class Guitar extends MusicInstrument implements IPlay {
+public class Guitar extends MusicInstrument implements IPlay, ISell {
 
     private int noOfStrings;
 
@@ -11,12 +12,15 @@ public class Guitar extends MusicInstrument implements IPlay {
         this.noOfStrings = noOfStrings;
     }
 
-
     public int getNoOfStrings() {
         return noOfStrings;
     }
 
     public String play(String sound){
         return "The guitar makes a sound: " + sound;
+    }
+
+    public double calculateMarkup(){
+        return this.getSellingPrice() - this.getBuyingPrice();
     }
 }
