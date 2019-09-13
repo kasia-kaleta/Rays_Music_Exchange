@@ -33,4 +33,9 @@ public class GuitarAmpTest {
     public void canGetSellingPrice(){
         assertEquals(361.00, guitarAmp.getSellingPrice(), 0.01);
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(62.00, guitarAmp.calculateMarkup(), 0.01);
+    }
 }
