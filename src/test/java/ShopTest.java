@@ -36,6 +36,15 @@ public class ShopTest {
         assertEquals(2, shop.getStockCount());
     }
 
+    @Test
+    public void canGetTotalProfit(){
+        shop.addToStock(guitar);
+        shop.addToStock(drumsticks);
+        shop.addToStock(guitarAmp);
+        assertEquals(89.99, shop.getTotalProfit(), 0.01);
+
+    }
+
 
 }
 

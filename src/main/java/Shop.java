@@ -22,7 +22,14 @@ public class Shop {
 
     public void removeFromStock(ISell musicInstrument){
         this.stock.remove(musicInstrument);
+    }
 
+    public double getTotalProfit(){
+        double total = 0;
+        for (int i = 0; i < this.getStockCount(); i++){
+            total += stock.get(i).calculateMarkup();
+        }
+        return total;
     }
 
 
