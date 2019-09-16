@@ -1,6 +1,8 @@
 package instruments;
 
-public class Drums extends MusicInstrument {
+import behaviours.IPlay;
+
+public class Drums extends MusicInstrument implements IPlay {
 
 
     private int noOfCymbals;

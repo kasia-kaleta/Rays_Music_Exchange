@@ -1,6 +1,8 @@
 package instruments;
 
-public class Piano extends MusicInstrument{
+import behaviours.IPlay;
+
+public class Piano extends MusicInstrument implements IPlay {
 
     private String keyboardType;
 
